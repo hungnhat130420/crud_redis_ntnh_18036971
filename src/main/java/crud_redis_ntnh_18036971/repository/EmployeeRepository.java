@@ -32,7 +32,7 @@ public class EmployeeRepository {
     public void update(Employee employee){
         saveEmployee(employee);
     }
-    public void delete(Integer id){
-        hashOperations.remove("EMPLOYEE", id);
+    public void delete(Employee employee){
+        listOperations.remove("EMPLOYEE",1,employee);
     }
 }

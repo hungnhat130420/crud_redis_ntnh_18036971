@@ -36,8 +36,8 @@ public class EmployeeController {
         employeeRepository.update(employee);
     }
 
-    @DeleteMapping("/employees/{id}")
-    public void delete(@PathVariable("id") Integer id){
-        employeeRepository.delete(id);
+    @DeleteMapping("/employees/")
+    public void delete(@RequestBody Employee employee){
+        employeeRepository.delete(employee);
     }
 }
