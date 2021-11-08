@@ -20,7 +20,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/employees")
-    public List<Employee> findAll(){
+    public Long findAll(){
 
         return employeeRepository.findAll();
     }
